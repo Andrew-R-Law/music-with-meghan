@@ -1,0 +1,207 @@
+/*Base Element Styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color:darkslategrey;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3, ul, p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*--------
+Base Layout Styles
+---------*/
+
+/*Header Styles*/
+.profile-pic {
+    display: block;
+    margin: auto;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    padding: 15px 0 30px;
+    font-weight: 700;
+}
+
+.main-nav li {
+    padding: 10px 0;
+}
+
+/*Main Section Styles*/
+
+section p, section img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.portfolio {
+    padding: 60px 0 40px;
+}
+
+.projects section {
+    padding-bottom: 60px;
+}
+
+.uppercase-heading {
+    text-transform: uppercase;
+}
+.contact {
+    padding: 60px 0;
+    border-bottom:2px solid lightslategray;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 1.1rem;
+}
+
+.contact p, .contact li {
+    color: lightslategray;
+    padding: 10px;
+}
+
+/*Footer Styles*/
+footer ul {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.med-nav {
+    display: none;
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+    header, .main-nav, .about-me, .projects {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+  
+    .main-nav li {
+        padding: 0 30px;
+    }
+
+    .about-me {
+        margin: auto;
+        padding: 0 10px;
+    }
+ 
+    .about-item {
+        flex: 1;
+    }
+
+    .about-me p {
+        order: -1;
+        text-align: left;
+        padding-right: 10px;
+        margin-top: 0;
+        flex: 3;
+    }
+    
+    .projects {
+        flex-wrap: wrap;
+    }
+   
+    .project {
+       flex: 1 50%;
+   }
+
+   .contact {
+       width: calc(100% - 20px);
+       margin: auto;
+   }
+   
+   .contact p {
+       width: 70%;
+       margin: auto;
+   }
+
+   .small-nav {
+       display: none;
+   }
+
+   .med-nav {
+       display: inline-block;
+       padding: 0 0 0 10px;
+   }
+   .student-name {
+       margin-left: 0;
+       margin-right: auto;
+   }
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        padding-left: 10px;
+    }
+
+    .main-nav li {
+        padding-right: 0;
+    }
+
+    .about-me p {
+        font-size: 1.15rem;
+        padding-right: 60px;
+    }
+    .about-me img {
+        padding: 0;
+        flex: 2;
+    }
+  
+    .project {
+        flex: 1 33%;
+    }
+    
+    .student-name {
+        margin-left: 0;
+    }
+
+
+
+
+
+
+}
